@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
-
 <body>
 
     <!-- Header part design -->
@@ -47,26 +46,26 @@
                     <figure class="w-full">
                         <img class="w-full" src="image/messi.png" alt="Shoes" />
                     </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
+                    <h2 id="player-names" class="text-center text-2xl font-semibold my-3 text-white ">Lionel Messi</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white ">
                         <p>36 Goals</p>
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players1" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center bg-black shadow-md shadow-black hover:shadow-none">
                     <figure class="w-full">
                         <img class="w-full" src="image/messi.png" alt="Shoes" />
                     </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
+                    <h2 class="text-center text-2xl font-semibold my-3 text-white"> Messi</h2>
                     <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
                         <p>36 Goals</p>
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players2" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
@@ -79,7 +78,7 @@
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players3" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 select-player" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
@@ -92,7 +91,7 @@
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players4" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 select-player" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
@@ -105,7 +104,7 @@
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players5" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 select-player" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
@@ -118,7 +117,7 @@
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players6" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 select-player" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
@@ -131,7 +130,7 @@
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players7" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 select-player" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
@@ -144,7 +143,7 @@
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players8" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 select-player" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
@@ -157,7 +156,7 @@
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 ">SELECT</button>
+                    <button id="players9" class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 select-player" onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
             </section>
 
@@ -169,37 +168,38 @@
                 <aside class="h-2/5 mb-8 bg-black pt-5 shadow-md shadow-black">
                     <h2 class="text-white text-center text-3xl font-semibold mb-4">Selected - V</h2>
                     <hr class="w-3/5 mx-auto">
-                    <ul id="list-container" class="mt-4"></ul>
+                    <ol id="list-container" class="text-white list-inside list-decimal mt-5 text-xl pl-7"">
+                    </ol>
                 </aside>
                 <aside class="bg-black shadow-md shadow-black px-4 py-8 text-white">
                     <h2 class="text-center text-2xl font-semibold mb-3 ">Budget</h2>
                     <hr class="w-2/5 mx-auto">
                     <div class="w-4/5 mx-auto">
                         <div class="flex justify-between mt-5 text-slate-400">
-                            <p>Per Player</p>
-                            <input class="border bg-black py-1 pl-2" type="text">
+                            <p class="mt-1">Per Player</p>
+                            <input id="per-player" class="border bg-black py-1 pl-2" type="text">
                         </div>
                         <div class="flex justify-center items-center">
-                            <button class="mt-7 py-1 w-3/5 bg-sky-500/75">Calculate</button>
+                            <button id="calculate-btn" class="mt-7 py-1 w-3/5 bg-sky-500/75">Calculate</button>
                         </div>
                         <div class="flex justify-between mt-5">
                             <p class="text-slate-400">player Expenses</p>
-                            <p>$<span>00</span></p>
+                            <p>$<span id="player-expenses">00</span></p>
                         </div>
                         <div class="flex justify-between mt-5 text-slate-400">
-                            <p>Per Player</p>
-                            <input class="border bg-black py-1 pl-2" type="text">
+                            <p class="mt-1">Manager</p>
+                            <input id="manager-amount" class="border bg-black py-1 pl-2" type="text">
                         </div>
                         <div class="flex justify-between mt-5 text-slate-400">
-                            <p>Per Player</p>
-                            <input class="border bg-black py-1 pl-2" type="text">
+                            <p class="mt-1">Coach</p>
+                            <input id="cocah-amount" class="border bg-black py-1 pl-2" type="text">
                         </div>
                         <div class="flex justify-center items-center">
-                            <button class="mt-7 py-1 w-3/5 bg-sky-500/75">Calculate Total</button>
+                            <button id="calculate-total" class="mt-7 py-1 w-3/5 bg-sky-500/75">Calculate Total</button>
                         </div>
                         <div class="flex justify-between mt-5 ">
                             <p class="text-slate-400">Total</p>
-                            <p>$<span>00</span></p>
+                            <p>$<span id="total-cost">00</span></p>
                         </div>
                     </div>
                 </aside>
@@ -231,8 +231,12 @@
             </ul>
         </section>
     </footer>
-
     <!-- Footer part design end -->
+
+    <!-- Js part -->
+
+    <script src="js/main-function.js"></script>
+    <script src="js/selection.js"></script>
 </body>
 
 </html>
