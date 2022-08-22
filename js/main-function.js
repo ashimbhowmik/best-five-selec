@@ -1,26 +1,27 @@
 
-function getElementTextValue(playerAmount){
-    
+function getElementTextValue(playerAmount) {
+
     const givenAmountOfPlayers = document.getElementById(playerAmount);
     const totalamountStrings = givenAmountOfPlayers.value;
-    const totalamounts= parseFloat(totalamountStrings);
+    const totalamounts = parseFloat(totalamountStrings);
 
     return totalamounts;
 }
 
 
 
-function getElementTextAmount(amount){
-    
+function getElementTextAmount(amount) {
+
     const givenAmountOfPlayer = document.getElementById(amount);
     const totalamountString = givenAmountOfPlayer.innerText;
-    const totalamount= parseFloat(totalamountString);
+    const totalamount = parseFloat(totalamountString);
 
     return totalamount;
 }
 
-function getElementText(amountPlayer,playerValue){
-    
+function getElementText(amountPlayer, playerValue) {
+
     const playerAmount = document.getElementById(amountPlayer);
-    playerAmount.innerText = playerValue ;
+    playerAmount.innerText = playerValue;
+
 }
