@@ -22,13 +22,8 @@ for (let i = 0; i < selectionPlayerDiasbled.length; i++) {
             addPlayer.appendChild(li);
         }
         else {
-            alert('You Can not select player')
+            alert('Cant added more player..!')
         }
-
-        // const listed = document.querySelectorAll('li');
-        // for (const lists of listed) {
-        //     lists.style.margin = '100px';
-        // }
 
         const listed = document.getElementsByClassName('listPlayer');
         for (const lists of listed) {

@@ -5,6 +5,8 @@ function getElementTextValue(playerAmount) {
     const totalamountStrings = givenAmountOfPlayers.value;
     const totalamounts = parseFloat(totalamountStrings);
 
+    givenAmountOfPlayers.value = '';
+
     return totalamounts;
 }
 

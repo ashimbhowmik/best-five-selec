@@ -1,19 +1,24 @@
-document.getElementById('calculate-btn').addEventListener('click',function(){
-   
-     
-    const perPlayerAmount = getElementTextValue('per-player');
-    
+document.getElementById('calculate-btn').addEventListener('click', function () {
 
-    const playerExpenses = perPlayerAmount * 5 ;
-    
-    getElementText('player-expenses',playerExpenses);
+
+    const perPlayerAmount = getElementTextValue('per-player');
+
+    if (isNaN(perPlayerAmount)) {
+        alert('invalid Innput....!');
+    }
+    else {
+        const playerExpenses = perPlayerAmount * 5;
+
+        getElementText('player-expenses', playerExpenses);
+    }
+
 
 });
 
 
-document.getElementById('calculate-total').addEventListener('click',function(){
-    
-     
+document.getElementById('calculate-total').addEventListener('click', function () {
+
+
     const managerAmount = getElementTextValue('manager-amount');
 
     const cocahAmount = getElementTextValue('cocah-amount');
@@ -21,8 +26,13 @@ document.getElementById('calculate-total').addEventListener('click',function(){
 
     const totalExpenses = getElementTextAmount('player-expenses');
 
-    const calculateTotalAMount = managerAmount + cocahAmount + totalExpenses ;
+    const calculateTotalAMount = managerAmount + cocahAmount + totalExpenses;
 
-    getElementText('total-cost',calculateTotalAMount);
-    
+    if (isNaN(calculateTotalAMount)) {
+        alert('invalid Innput....!');
+    }
+    else {
+        getElementText('total-cost', calculateTotalAMount);
+    }
+
 });

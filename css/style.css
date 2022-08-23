@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+.player-img{
+  width: 400px;
+  height: 360px;
+}
+
+body {
+  font-family: "Gentium Book Plus", serif;
+}

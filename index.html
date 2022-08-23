@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>Football Area</title>
 </head>
 
 <body>
@@ -19,15 +23,16 @@
     <header class="bg-black">
         <section class="flex justify-between">
             <div class="">
-                <img class="mt-16" src="image/bannar1.png" alt="" srcset="">
+                <img class="mt-16" src="image/Messi.png" alt="" srcset="">
             </div>
             <section class="flex flex-col text-center justify-center items-center ">
-                <h1 class="text-7xl mb-6 text-amber-600 font-semibold">Select Your Best Five</h1>
-                <p class="text-lg w-3/4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et cum
-                    sapiente eius itaque repellendus aspernatur aperiam odio delectus dolorem temporibus.</p>
+                <h1 class="text-8xl mb-8 text-amber-600 font-semibold">Top Five player</h1>
+                <p class="text-lg w-3/4 text-white">Association football, more commonly known as simply football or
+                    soccer is a team sport played between two teams of 11 players who primarily use their feet to
+                    propel the ball around a rectangular field called a pitch.</p>
             </section>
             <div class="">
-                <img class="mt-16" src="/image/bannar2.png" alt="" srcset="">
+                <img class="mt-16" src="image/Ronaldo.webp" alt="" srcset="">
             </div>
         </section>
     </header>
@@ -40,141 +45,92 @@
 
         <!-- Player Selection part design -->
 
-        <section class="flex container mx-auto gap-9 py-20">
-            <section class="w-3/4 grid grid-cols-3 gap-4 px-6 ">
+        <section class="flex container mx-auto gap-7 pt-20 pb-7">
+            <section class="w-3/4 grid grid-cols-3 gap-7 px-6 ">
                 <article
                     class="flex flex-col justify-center items-center bg-black shadow-md shadow-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Messi.png" alt="" />
                     </figure>
-                    <h2 id="player-names" class="text-center text-2xl font-semibold my-3 text-white ">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white ">
+                    <h2 id="player-names" class="text-center text-2xl font-semibold my-4 text-white ">Lionel Messi</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
                         <p>770 Goals</p>
                         <p>.</p>
                         <p>300 Assist</p>
                     </div>
-                    <button id="players1"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
+                    <button class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
                         onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center bg-black shadow-md shadow-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Naymar.png" alt="" />
                     </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Neymar</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Neymar</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
                         <p>450 Goals</p>
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button id="players2"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
+                    <button class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
                         onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Ronaldo.webp" alt="" />
                     </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
-                        <p>36 Goals</p>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">C.Ronaldo</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>810 Goals</p>
+                        <p>.</p>
+                        <p>200 Assist</p>
+                    </div>
+                    <button class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
+                        onclick="addToSelectedPlayer(this)">SELECT</button>
+                </article>
+                <article
+                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Lewa.webp" alt="" />
+                    </figure>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Lewandowski</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>360 Goals</p>
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
-                    <button id="players3"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
+                    <button class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
                         onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Ramos.1.png" alt="" />
                     </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
-                        <p>36 Goals</p>
-                        <p>.</p>
-                        <p>120 Assist</p>
-                    </div>
-                    <button id="players4"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
-                        onclick="addToSelectedPlayer(this)">SELECT</button>
-                </article>
-                <article
-                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
-                    </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Ramos</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
                         <p>36 Goals</p>
                         <p>.</p>
                         <p>120 Assist</p>
                     </div>
                     <button id="players5"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
                         onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
                 <article
                     class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/M.Neuer.png" alt="" />
                     </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
-                        <p>36 Goals</p>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">M.Neure</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>2 Goals</p>
                         <p>.</p>
-                        <p>120 Assist</p>
+                        <p>1 Assist</p>
                     </div>
                     <button id="players6"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
-                        onclick="addToSelectedPlayer(this)">SELECT</button>
-                </article>
-                <article
-                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
-                    </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
-                        <p>36 Goals</p>
-                        <p>.</p>
-                        <p>120 Assist</p>
-                    </div>
-                    <button id="players7"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
-                        onclick="addToSelectedPlayer(this)">SELECT</button>
-                </article>
-                <article
-                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
-                    </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
-                        <p>36 Goals</p>
-                        <p>.</p>
-                        <p>120 Assist</p>
-                    </div>
-                    <button id="players8"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
-                        onclick="addToSelectedPlayer(this)">SELECT</button>
-                </article>
-                <article
-                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
-                    <figure class="w-full">
-                        <img class="w-full" src="image/messi.png" alt="" />
-                    </figure>
-                    <h2 class="text-center text-2xl font-semibold my-3 text-white">Lionel Messi</h2>
-                    <div class="flex justify-evenly items-center w-3/5 mb-4 text-white">
-                        <p>36 Goals</p>
-                        <p>.</p>
-                        <p>120 Assist</p>
-                    </div>
-                    <button id="players9"
-                        class=" w-3/5 py-1 font-semibold mb-6 text-white bg-sky-500/75 player-selection"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
                         onclick="addToSelectedPlayer(this)">SELECT</button>
                 </article>
             </section>
@@ -185,41 +141,41 @@
 
             <section class="w-1/4">
                 <aside class="h-2/5 mb-8 bg-black pt-5 shadow-md shadow-black">
-                    <h2 class="text-white text-center text-3xl font-semibold mb-4">Selected - V</h2>
+                    <h2 class="text-amber-500 text-center text-3xl font-semibold mb-4">Selected - V</h2>
                     <hr class="w-3/5 mx-auto">
                     <ol id="list-container" class="text-white list-inside list-decimal mt-5 text-xl pl-7"">
                     </ol>
                 </aside>
                 <aside class=" bg-black shadow-md shadow-black px-4 py-8 text-white">
-                        <h2 class="text-center text-2xl font-semibold mb-3 ">Budget</h2>
-                        <hr class="w-2/5 mx-auto">
+                        <h2 class="text-center text-2xl font-semibold mb-5 text-amber-500">Budget</h2>
                         <div class="w-4/5 mx-auto">
                             <div class="flex justify-between mt-5 text-slate-400">
-                                <p class="mt-1">Per Player</p>
+                                <p class="mt-1 text-lg">Per Player</p>
                                 <input id="per-player" class="border bg-black py-1 pl-2" type="text">
                             </div>
                             <div class="flex justify-center items-center">
-                                <button id="calculate-btn" class="mt-7 py-1 w-3/5 bg-sky-500/75">Calculate</button>
+                                <button id="calculate-btn"
+                                    class="text-lg py-2 px-6 rounded-lg mt-7 bg-sky-500/75">Calculate</button>
                             </div>
-                            <div class="flex justify-between mt-5">
-                                <p class="text-slate-400">player Expenses</p>
-                                <p>$<span id="player-expenses">00</span></p>
+                            <div class="flex justify-between mt-5 text-lg">
+                                <p class="text-slate-400 text-lg">player Expenses</p>
+                                <p><span id="player-expenses">00</span> M</p>
                             </div>
                             <div class="flex justify-between mt-5 text-slate-400">
-                                <p class="mt-1">Manager</p>
+                                <p class="mt-1 text-lg">Manager</p>
                                 <input id="manager-amount" class="border bg-black py-1 pl-2" type="text">
                             </div>
                             <div class="flex justify-between mt-5 text-slate-400">
-                                <p class="mt-1">Coach</p>
+                                <p class="mt-1 text-lg">Coach</p>
                                 <input id="cocah-amount" class="border bg-black py-1 pl-2" type="text">
                             </div>
                             <div class="flex justify-center items-center">
-                                <button id="calculate-total" class="mt-7 py-1 w-3/5 bg-sky-500/75">Calculate
+                                <button id="calculate-total" class="text-lg mt-7 py-2 px-6 rounded-lg bg-sky-500/75">
                                     Total</button>
                             </div>
-                            <div class="flex justify-between mt-5 ">
+                            <div class="flex justify-between mt-5 text-lg">
                                 <p class="text-slate-400">Total</p>
-                                <p>$<span id="total-cost">00</span></p>
+                                <p><span id="total-cost">00</span> M</p>
                             </div>
                         </div>
                 </aside>
@@ -228,7 +184,112 @@
             <!-- Player Budget part design end -->
 
         </section>
+        <section id="hidden-part" class="flex container mx-auto gap-7 pb-8 hidden">
+            <section class="w-3/4 grid grid-cols-3 gap-7 pl-6 pr-12">
+                <article
+                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Aguero.1.png" alt="" />
+                    </figure>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Aguero</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>310 Goals</p>
+                        <p>.</p>
+                        <p>120 Assist</p>
+                    </div>
+                    <button id="players7"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
+                        onclick="addToSelectedPlayer(this)">SELECT</button>
+                </article>
+                <article
+                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Di-Maria.png" alt="" />
+                    </figure>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Di Maria</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>278 Goals</p>
+                        <p>.</p>
+                        <p>209 Assist</p>
+                    </div>
+                    <button id="players8"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
+                        onclick="addToSelectedPlayer(this)">SELECT</button>
+                </article>
+                <article
+                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Mbappe.png" alt="" />
+                    </figure>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Mbappe</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>120 Goals</p>
+                        <p>.</p>
+                        <p>60 Assist</p>
+                    </div>
+                    <button id="players9"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
+                        onclick="addToSelectedPlayer(this)">SELECT</button>
+                </article>
+                <article
+                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/MAscherano.png" alt="" />
+                    </figure>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Mascherano</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>32 Goals</p>
+                        <p>.</p>
+                        <p>190 Assist</p>
+                    </div>
+                    <button id="players9"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
+                        onclick="addToSelectedPlayer(this)">SELECT</button>
+                </article>
+                <article
+                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Martinez.png" alt="" />
+                    </figure>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Martinez</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>1 Goals</p>
+                        <p>.</p>
+                        <p>2 Assist</p>
+                    </div>
+                    <button id="players9"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
+                        onclick="addToSelectedPlayer(this)">SELECT</button>
+                </article>
+                <article
+                    class="flex flex-col justify-center items-center shadow-md shadow-black bg-black hover:shadow-none">
+                    <figure class="w-full mt-3">
+                        <img class="w-full player-img" src="image/Luis-Suarez.png" alt="" />
+                    </figure>
+                    <h2 class="text-center text-2xl font-semibold my-4 text-white">Luis Suarez</h2>
+                    <div class="flex justify-evenly items-center w-3/5 mb-6 text-white text-lg">
+                        <p>470 Goals</p>
+                        <p>.</p>
+                        <p>170 Assist</p>
+                    </div>
+                    <button id="players9"
+                        class=" py-2 px-6 rounded-lg font-semibold mb-8 text-white bg-red-600 player-selection"
+                        onclick="addToSelectedPlayer(this)">SELECT</button>
+                </article>
+            </section>
+        </section>
     </main>
+    <section id="disable-btn" class="bg-neutral-900 flex justify-center items-center pt-8">
+        <button id="hidden-btn"
+            class=" px-4 py-2 mb-10 bg-indigo-600 text-white font-semibold text-lg rounded-lg tooltip tooltip-info"
+            data-tip="Click to Show More Player">View
+            All Player</button>
+    </section>
+    <section id="disable-btn2" class="bg-neutral-900 flex justify-center items-center pt-5 hidden">
+        <button id="disable-btn"
+            class=" px-4 py-2 mb-10 bg-indigo-600 text-white font-semibold text-lg rounded-lg tooltip tooltip-info"
+            data-tip="Click to Close">Close</button>
+    </section>
 
     <!-- Main part Design end -->
 
@@ -258,6 +319,7 @@
     <script src="js/main-function.js"></script>
     <script src="js/selection.js"></script>
     <script src="js/calculation.js"></script>
+    <script src="js/hidden.js"></script>
 </body>
 
 </html>
